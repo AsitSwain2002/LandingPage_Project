@@ -60,12 +60,13 @@ nav>.navBox2 {
     cursor: pointer;
 }
 
-.navSubBox2 {
+.navBox2>.navSubBox2 {
     height: 100%;
     width: 20%;
     margin-left: 5%;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .navSubBox2>ul {
@@ -79,7 +80,9 @@ nav>.navBox2 {
     font-weight: 700;
     border: none;
 }
-
+.navSubBox2>ul>li {
+    cursor: pointer;
+}
 .navSubBox2>ul>.signup {
     height: 70%;
     width: 42%;
@@ -88,6 +91,7 @@ nav>.navBox2 {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    cursor: pointer;
 
 }
 
