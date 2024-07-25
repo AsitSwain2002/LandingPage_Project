@@ -135,9 +135,13 @@ main {
 .content{
     height: 40%;
     width: 100%;
-    font-size: 18px;
+}
+.content > p{
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
     color: #7C7B91;
-    font-family: 'Times New Roman', Times, serif
+  
 }
 .btn{
     height: 20%;
