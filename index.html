@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <title>Project 01</title>
 </head>
 
@@ -28,7 +32,7 @@
                     </div>
                     <div class="navSubBox2">
                         <ul>
-                            <li>Sign In</li>
+                            <li class="signIn" onclick="signIn">Sign In</li>
                             <li class="signup">Sign Up</li>
                         </ul>
                     </div>
@@ -37,29 +41,21 @@
         </header>
         <main>
             <div class="mainContainer">
-                <div class="leftSide">
-                    <div class="inCon">
-                        <div class="heading">
-                            <h1>
-                               Java FullStack Developer
-                            </h1>
-                        </div>
-                        <div class="content">
-                            <p>Join us in the exciting world of programming and turn your ideas into reality. Unlock the
-                                world of endless possibilities - learn to code and shape the digital future with us.</p>
-                        </div>
-                        <div class="btn">
-                            <button class="leftBtn">Join Now</button>
-                            <button class="rightBtn">LearnMore</button>
-                        </div>
-                    </div>
+                <div class="close">
+                    <i class="ri-close-fill" onclick="cut"></i>
+                    <!-- <p class="closeLetter" onpointerover="show">close</p> -->
                 </div>
-                <div class="reghtSide">
-                    <img src="hero-bg.png" alt="">
+
+                <div class="inputCon">
+                  <input type="email" id="email" placeholder="Enter Email">
+                  <input type="password" id="pas" placeholder="Enter Password">
+                  <input type="submit" value="Submit" id="submit">
                 </div>
+               
             </div>
         </main>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
