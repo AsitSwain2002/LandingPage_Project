@@ -33,23 +33,25 @@
                     <div class="navSubBox2">
                         <ul>
                             <li class="signIn" onclick="signIn">Sign In</li>
-                            <li class="signup">Sign Up</li>
+                            <li class="signup" onclick="theme">Dark</li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
         <main>
-            <div class="mainContainer">
+            <div class="mainContainer">              
                 <div class="close">
                     <i class="ri-close-fill" onclick="cut"></i>
                     <!-- <p class="closeLetter" onpointerover="show">close</p> -->
                 </div>
 
-                <div class="inputCon">
-                  <input type="email" id="email" placeholder="Enter Email">
-                  <input type="password" id="pas" placeholder="Enter Password">
+                <div class="inputCon" >
+                    <form action="#" id="form">
+                  <input type="email" id="email" placeholder="Enter Email"  required>
+                  <input type="password" id="pas" placeholder="Enter Password" required>
                   <input type="submit" value="Submit" id="submit">
+                </form>
                 </div>
                
             </div>

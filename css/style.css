@@ -18,6 +18,7 @@ body {
     width: 80%;
     background: linear-gradient(-145deg, rgb(23, 93, 105) 25%, rgb(51, 12, 67) 95%);
     margin: auto;
+    transition: all 0.8s;
 }
 
 header {
@@ -113,7 +114,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
 .mainContainer {
     height: 60vh;
     width: 45%;
@@ -150,6 +150,10 @@ main {
     height: 70%;
     width: 100%;
     margin: 2% 0;
+}
+.inputCon > form{
+    height: 100%;
+    width: 100%;
 }
 
 #email {
@@ -202,7 +206,8 @@ main {
 }
 #submit:hover{
     cursor: pointer;
-    transition: all 2s;
+    transition: all 1s;
     background-color:  rgb(51, 12, 67);
     color: rgb(136, 186, 195);
+    border:  1px solid rgb(99, 99, 136);;
 }
