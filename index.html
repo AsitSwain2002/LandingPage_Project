@@ -39,8 +39,9 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="mainContainer">              
+        <main id="main">
+            <div class="mainContainerOut">
+            <div class="mainContainerIn">          
                 <div class="close">
                     <i class="ri-close-fill" onclick="cut"></i>
                     <!-- <p class="closeLetter" onpointerover="show">close</p> -->
@@ -50,11 +51,16 @@
                     <form action="#" id="form">
                   <input type="email" id="email" placeholder="Enter Email"  required>
                   <input type="password" id="pas" placeholder="Enter Password" required>
+                  <div class="otp">
+                    <input type="password" name="otp" id="otp" placeholder="Enter Otp Here" required>
+                    <button id="otpBtn">Generate Otp</button>
+                  </div>
                   <input type="submit" value="Submit" id="submit">
                 </form>
-                </div>
-               
+                </div> 
             </div>
+        </div>
+            <div class="data-time"></div>
         </main>
     </div>
     <script src="Js/script.js"></script>

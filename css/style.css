@@ -14,11 +14,12 @@ body {
 }
 
 .mainCon {
-    height: 100vh;
+    height: auto;
     width: 80%;
     background: linear-gradient(-145deg, rgb(23, 93, 105) 25%, rgb(51, 12, 67) 95%);
     margin: auto;
     transition: all 0.8s;
+    
 }
 
 header {
@@ -66,7 +67,7 @@ nav>.navBox2 {
 }
 
 .navBox2>.navSubBox1>ul :hover {
-    color: #1E5D7B;
+    color: rgb(76, 76, 236);
     cursor: pointer;
 }
 
@@ -104,23 +105,41 @@ nav>.navBox2 {
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 1s;
 
 }
 
-main {
-    min-height: 88vh;
-    width: 100%;
+#main {
+    height: 88vh;
+    max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 15px;
+    padding-top: 15px;
 }
-.mainContainer {
+.mainContainerOut {
+    height: 100vh;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    backdrop-filter: blur(5px); /* Blurs the background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    position: fixed;
+    top: 12%;
+    display: none;
+}
+.mainContainerIn {
     height: 60vh;
     width: 45%;
     border: 1px solid rgb(23, 93, 105);
-    display: none;
+    /* display: none; */
     border-radius: 13px;
     box-shadow: 0px 0px 15px rgba(54, 156, 233, 0.746);
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    background-color: aqua;
 }
 
 .close {
@@ -206,8 +225,75 @@ main {
 }
 #submit:hover{
     cursor: pointer;
-    transition: all 1s;
+    transition: all 0.8s;
     background-color:  rgb(51, 12, 67);
     color: rgb(136, 186, 195);
     border:  1px solid rgb(99, 99, 136);;
 }
+.otp{
+    height: 10%;
+    width: 60%;
+    margin: 8% 0 2% 10%;
+}
+#otp{
+    height: 100%;
+    width: 68.5%;
+     background-color: transparent;
+     outline: none;
+     border: none;
+     border-bottom: 2px solid rgb(158, 156, 156);
+     color: white;
+     font-size: 16px;
+}
+#otp::placeholder {
+    color: white;
+    font-size: 15px;
+}
+#otpBtn{
+    height: 100%;
+    width: 30%;
+     background-color: transparent;
+     border: 1px solid white;
+     cursor: pointer;
+     border-radius: 12px;
+}
+.data-time{
+    height: 80px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    border: 1px solid ;
+    position: fixed;
+    bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    right: 0;
+}
+.card{
+    height: 30vh;
+    min-width: 13vw;
+    background-color: rgb(114, 111, 111);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 12px;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scaleY(1.1);
+    transition: all 0.2s;
+}
+.card>img{
+    height: 60%;
+    width: 80%;
+   border-radius: 50%;
+   border: 2px solid white;
+}
+/* .name{
+    margin-top: 15px;
+} */
